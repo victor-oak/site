@@ -1,7 +1,5 @@
 doctype
 html(lang="pt-br")
-  head
-    title= title
-    link(rel="stylesheet" href="/main.css")
+  != partial("_partials/head", { title: "Victor Carvalho" })
   body
     != yield

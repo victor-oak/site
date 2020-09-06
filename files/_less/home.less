@@ -1,104 +1,162 @@
+// home.less
+
 .page-home {
+
     .grid {
-      display: grid;
-      position: relative;
-      justify-items: start;
-      align-items: start;
-      grid-template-columns: repeat(4, 1fr);
-      grid-template-rows: 100vh 1fr 1fr 1fr;
+        display: flex;
+        flex-direction: column;
+        position: static;
     }
-  
+
     .content {
-      grid-column-start: 1;
-      grid-column-end: 4;
-      grid-row-start: 1;
-      grid-row-end: 5;
-  
-      display: flex;
-      flex-direction: column;
-      justify-content: flex-start;
-      gap: 48px;
-      
+        grid-column-start: 1;
+        grid-column-end: 4;
+        grid-row-start: 1;
+        grid-row-end: 5;
+    
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        gap: 6.4rem;
     }
-  
+
     .profile {
-      position: sticky;
-      top: 0;
-      grid-column-start: 3;
-      grid-column-end: 5;
-      grid-row-start: 1;
-      grid-row-end: 2;
-      z-index: -1;
-      background-color: #444;
-      background-image: url('img/victor-carvalho.jpg');
-  
-      background-size: cover;
-      background-repeat: no-repeat;
-      place-self: stretch;
+        order: -1;
+        position: static;
+        z-index: 1;
+        width: 12.8rem;
+        height: 12.8rem;
+        margin: 4.8rem 3.2rem 0 3.2rem;
+        border-radius: 50%;
+        background-color: #FCF7F0;
+        background-image: url('img/victor-carvalho.jpg');
+    
+        background-size: cover;
+        background-repeat: no-repeat;
     }
-  
+
     .iam {
-      padding: 48px 64px 0 64px;
-      font-weight: normal;
-      font-size: 32px;
-      line-height: 56px;
+        padding: 3.2rem 3.2rem 0 3.2rem;
+        font-weight: normal;
+        font-size: 3.2rem;
+        line-height: 5.6rem;
     }
-  
+
     .iam .name {
-      font-style: normal;
-      font-weight: bold;
-      font-size: 98px;
-      line-height: 100px;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 9.8rem;
+        line-height: 10.0rem;
     }
-  
+
     .iam .highlight {
-      background-color: #FAFFBE;
+        background-color: #FAFFBE;
     }
-  
+
     .title-section {
-      font-style: normal;
-      font-weight: normal;
-      font-size: 24px;
-  
-      color: #D0D0D0;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 2.4rem;
+        margin: 0 0 4.0rem 0;
+    
+        color: #D0D0D0;
     }
-  
+
     .list {
-      list-style: none;
-      padding: 0;
+        list-style: none;
+        padding: 0;
+        margin: 0;
     }
-  
+
     .list li {
-      padding: 24px 0;
-      font-size: 24px;
+        margin: 0 0 3.2rem 0;
+        font-size: 2.4rem;
     }
-  
+
     .list p {
-      font-style: normal;
-      font-weight: normal;
-      font-size: 16px;
-      margin: 8px 0 0 0;
-      color: #999999;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 1.6rem;
+        margin: 0.8rem 0 0 0;
+        color: #999999;
     }
-  
+
     .list .more {font-weight: normal;}
-  
+
     .works,
     .projects,
     .about {
-      max-width: 55%;
-      padding: 0 64px;
+        max-width: 100%;
+        padding: 0 3.2rem;
     }
-  
+
     .about p {
-      margin-bottom: 32px;
-      font-weight: normal;
-      font-size: 24px;
-      line-height: 40px;
+        margin-bottom: 3.2rem;
+        font-weight: normal;
+        font-size: 2.4rem;
+        line-height: 4.0rem;
     }
-  
+
     .about .logo {
-      margin: 98px 0 64px 0;
+        margin: 9.8rem 0 6.4rem 0;
     }
-  
-  }
+
+}
+
+
+
+
+
+@media (min-width: 769px) {
+
+    .page-home {
+
+        .grid {
+            display: grid;
+            position: relative;
+            justify-items: start;
+            align-items: start;
+            grid-template-columns: repeat(4, 1fr);
+            grid-template-rows: 100vh 1fr 1fr 1fr;
+        }
+    
+        .profile {
+            position: sticky;
+            top: 0;
+            grid-column-start: 3;
+            grid-column-end: 5;
+            grid-row-start: 1;
+            grid-row-end: 2;
+            z-index: -1;
+
+            width: auto;
+            height: auto;
+            margin: 0;
+            border-radius: 0;
+
+            place-self: stretch;
+        }
+    
+        .iam {
+            padding: 4.8rem 6.4rem 0 6.4rem;
+        }
+    
+        .iam .name {
+            font-size: 9.8rem;
+            line-height: 10.0rem;
+        }
+    
+        .works,
+        .projects,
+        .about {
+            max-width: 55%;
+            padding: 0 6.4rem;
+        }
+    
+        .about .logo {
+            margin: 9.8rem 0 6.4rem 0;
+        }
+    
+    }
+
+} 

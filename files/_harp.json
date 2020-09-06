@@ -1,14 +1,7 @@
 {
   "globals": {
-    "title": "Victor Carvalho",
-    "name"  : "John Doe",
-    "uri": "http://victorcarvalho.com",
-    "pages": {
-      "home": {
-        "class": "page-home",
-        "title": "Victor Carvalho / Product Designer"
-      }
-
-    }
+    "title": "Victor Carvalho - Product Designer",
+    "name"  : "Victor Carvalho",
+    "uri": "http://victorcarvalho.com"
   }
 }

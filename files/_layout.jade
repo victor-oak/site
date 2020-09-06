@@ -1,5 +1,5 @@
 doctype
 html(lang="pt-br")
   != partial("_partials/head", { title: "Victor Carvalho" })
-  body
+  body(class="#{pages.home.class}")
     != yield

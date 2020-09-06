@@ -1,0 +1,104 @@
+.page-home {
+    .grid {
+      display: grid;
+      position: relative;
+      justify-items: start;
+      align-items: start;
+      grid-template-columns: repeat(4, 1fr);
+      grid-template-rows: 100vh 1fr 1fr 1fr;
+    }
+  
+    .content {
+      grid-column-start: 1;
+      grid-column-end: 4;
+      grid-row-start: 1;
+      grid-row-end: 5;
+  
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      gap: 48px;
+      
+    }
+  
+    .profile {
+      position: sticky;
+      top: 0;
+      grid-column-start: 3;
+      grid-column-end: 5;
+      grid-row-start: 1;
+      grid-row-end: 2;
+      z-index: -1;
+      background-color: #444;
+      background-image: url('img/victor-carvalho.jpg');
+  
+      background-size: cover;
+      background-repeat: no-repeat;
+      place-self: stretch;
+    }
+  
+    .iam {
+      padding: 48px 64px 0 64px;
+      font-weight: normal;
+      font-size: 32px;
+      line-height: 56px;
+    }
+  
+    .iam .name {
+      font-style: normal;
+      font-weight: bold;
+      font-size: 98px;
+      line-height: 100px;
+    }
+  
+    .iam .highlight {
+      background-color: #FAFFBE;
+    }
+  
+    .title-section {
+      font-style: normal;
+      font-weight: normal;
+      font-size: 24px;
+  
+      color: #D0D0D0;
+    }
+  
+    .list {
+      list-style: none;
+      padding: 0;
+    }
+  
+    .list li {
+      padding: 24px 0;
+      font-size: 24px;
+    }
+  
+    .list p {
+      font-style: normal;
+      font-weight: normal;
+      font-size: 16px;
+      margin: 8px 0 0 0;
+      color: #999999;
+    }
+  
+    .list .more {font-weight: normal;}
+  
+    .works,
+    .projects,
+    .about {
+      max-width: 55%;
+      padding: 0 64px;
+    }
+  
+    .about p {
+      margin-bottom: 32px;
+      font-weight: normal;
+      font-size: 24px;
+      line-height: 40px;
+    }
+  
+    .about .logo {
+      margin: 98px 0 64px 0;
+    }
+  
+  }

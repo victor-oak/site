@@ -5,14 +5,15 @@
                 != partial("../_partials/logo-svg")
             h1.title-page Renovando um sistema legado
             p.client #[strong SOC] &nbsp;&nbsp;/&nbsp;&nbsp; #[span.year 2015 - 2017]
-            ul.tags
-                    li ARQUITETURA DE INFORMAÇÃO
-                    li DESIGN DE INTERAÇÃO
-                    li VISUAL
-                    li PESQUISA
-                    li DESIGN OPS
-                    li ESTRATÉGIA
-                    li WORKSHOPS
+            .wrap-tags
+                ul.tags
+                        li ARQUITETURA DE INFORMAÇÃO
+                        li DESIGN DE INTERAÇÃO
+                        li VISUAL
+                        li PESQUISA
+                        li DESIGN OPS
+                        li ESTRATÉGIA
+                        li WORKSHOPS
         section.story
             h2.title-section MISSÃO
             p O SOC foi um dos pioneiros em modelos SaaS no Brasil e é líder no ramo de saúde ocupacional. Porém nesses 20 anos na web, o legado não evoluiu os padrões de interface e interação, tendo vários gaps de usabilidade. Fui convocado para iniciar uma nova área de produto e design na empresa para modernizar o sistema.
@@ -37,7 +38,8 @@
                         a.img-link(href="#" title="Nome")
                             img(src="/img/victor-carvalho@mob.jpg" alt="Nome")
                             span.tooltip Victor Carvalho Alamenda junior
-            
+        .leia-mais  
+            a(href="#") LEIA MAIS   
                 
     .mosaic
         figure.big-item
@@ -76,8 +78,9 @@
             img(src="../img/smiles/home-concept-mobile.png" alt="" data-zoomable)
             figcaption Descritivo da tela com infos da imagem
         
-        
-        iframe.big-item.video(width="560" height="315" src="https://www.youtube.com/embed/JvGSN1HU4e8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen)
+        .big-item.video
+            .video-container
+                iframe(width="560" height="315" src="https://www.youtube.com/embed/JvGSN1HU4e8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen)
 
 .next-work
     h4 PRÓXIMO TRABALHO
@@ -87,11 +90,3 @@ a.back-to-top.img-link(href="#")
     != partial("../_partials/back-to-top")
 
 
-script(src="../medium-zoom.js")
-
-script. 
-    document.addEventListener("DOMContentLoaded", function(event) {
-        mediumZoom('[data-zoomable]',{
-            background: 'rgba(0,0,0,.8)',
-            margin: 32})
-    });

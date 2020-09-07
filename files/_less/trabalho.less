@@ -29,10 +29,11 @@
         place-self: stretch;
 
         display: grid;
-        grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+        grid-template-columns: repeat(3, 1fr);
         grid-template-rows: repeat(auto-fill, minmax(98px, 1fr));
-        grid-gap: 40px;
+        grid-gap: 4.0rem;
         grid-auto-flow: dense;
+        place-items: center;
 
         padding: 6.4rem 6.4rem 12.8rem 6.4rem;
 
@@ -41,7 +42,9 @@
         figure {
             position: relative;
             margin: 0;
+            height: auto;
             transition: transform .3s;
+            
         }
 
         figcaption {
@@ -53,11 +56,11 @@
             box-sizing: border-box;
 
             opacity: 0;
-            padding: 24px 16px;
-            font-size: 14px;
+            padding: 1.6rem;
+            
+            font-size: 1.4rem;
             text-align: center;
             background-color: rgba(0,0,0,.8);
-            //transform: translate(0, -70px);
             border-radius: 0 0 4px 4px;
             color: #fff;
             transition: opacity .2s;
@@ -73,35 +76,45 @@
             transition: transform .3s;
         }
 
-        img,
-        .video {
+        figure:hover img {
+            box-shadow: 0px 4px 30px rgba(0,0,0,.2);
+            transition: box-shadow .3s;
+        }
+
+        img {
             max-width: 100%;
-            //place-self: stretch;
-            //filter: drop-shadow(0px 4px 20px rgba(0, 0, 0, 0.1));
+            
             box-shadow: 0px 4px 20px rgba(0,0,0,.1);
             border-radius: 4px;
         }
 
+     
+
         .big-item {
+           
             grid-column-end: span 3;
             grid-row-end: span 3;
         }
 
         .regular-item {
+    
             grid-column-end: span 2;
+
             grid-row-end: span 2;
         }
         
         .vertical-item {
+    
             grid-column-end: span 1;
+
             grid-row-end: span 3;
         }
 
         .video {
-            width: 100%;
+            max-width: 100%;
             height: 50vh;
             place-self: stretch;
-            border-radius: 4px;
+            
         }
 
         
@@ -187,12 +200,12 @@
         top: 3.2rem;
         left: 50%;
 
-        padding: 8px 16px;
+        padding: 0.8rem 1.6rem;
         background-color: #444;
         border-radius: 8px;
         text-align: center;
         color: #fff;
-        font-size: 14px;
+        font-size: 1.4rem;
         font-weight: normal;
 
         transform: translateX(-50%);
@@ -204,7 +217,7 @@
         content: " ";
         display: block;
         position: absolute;
-        top: -16px;
+        top: -1.6rem;
         left: 50%;
         transform: translateX(-50%);
         width: 1px;
@@ -246,3 +259,186 @@
 
 }
 
+@media (max-width: 1260px) {
+    .page-trabalho {
+        .mosaic {
+            
+            grid-template-columns: repeat(2, 1fr);
+
+            .big-item {
+
+                grid-column-end: span 2;
+
+            }
+    
+            .regular-item {
+
+                grid-column-end: span 2;
+            }
+            
+            .vertical-item {
+
+                grid-column-end: span 1;
+            }
+        }
+    }
+}
+
+@media (max-width: 980px) {
+    .page-trabalho {
+        .grid { 
+            display: block;    
+        }
+
+        .mosaic {
+            
+            grid-template-columns: repeat(3, 1fr);
+
+            .big-item {
+
+                grid-column-end: span 3;
+
+            }
+    
+            .regular-item {
+
+                grid-column-end: span 2;
+            }
+            
+            .vertical-item {
+
+                grid-column-end: span 1;
+            }
+        }
+    }
+}
+
+
+@media (max-width: 600px) {
+    .page-trabalho {
+        .content {
+            position: relative;
+            max-width: 100%;
+            padding: 3.2rem;
+
+            gap: 3.2rem;
+
+            height: 50.0rem;
+            overflow: hidden;
+
+            .tags {
+                display: flex;
+                
+                padding-bottom: 1.6rem;
+                
+                flex-direction: row;
+                flex-wrap: nowrap;
+
+                overflow: scroll;
+                
+            }
+
+            .wrap-tags {
+                position: relative;
+                padding-right: 2.4rem;
+            }
+
+            .wrap-tags::before {
+                content: " ";
+                display: block;
+                position: absolute;
+                top: 0;
+                right: 0;
+                width: 50px;
+                height: 100%;
+                background-image: linear-gradient(270deg, #fff 4.02%, rgba(255, 255, 255, 0.4) 51.94%, rgba(255, 255, 255, 0) 100%);
+            }
+
+            .wrap-tags::after {
+                content: " ";
+                display: block;
+                position: absolute;
+                top: 0;
+                left: -1.5rem;
+                width: 50px;
+                height: 100%;
+                background-image: linear-gradient(90deg, #fff 4.02%, rgba(255, 255, 255, 0.4) 51.94%, rgba(255, 255, 255, 0) 100%);
+            }
+
+            .leia-mais {
+                display: block;
+                position: absolute;
+                width: 100%;
+                margin: 0 auto;
+                text-align: center;
+                
+                bottom: 3.2rem;
+                left: 0;
+                
+                z-index: 1;
+            }
+        }
+
+        .content::after {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            content: " ";
+            display: block;
+            width: 100%;
+            height: 20.0rem;
+            background-image: linear-gradient(0deg, #fff 20%, rgba(255, 255, 255, 0.4) 80%, rgba(255, 255, 255, 0) 100%);
+        }
+
+        .open {
+            height: auto;
+
+            .leia-mais {
+                display: none;
+            }
+
+            ::after {
+                display: none;
+            }
+        }
+
+        .mosaic { 
+            display: flex;
+            flex-direction: column;
+            gap: 3.2rem;
+            max-width: 100%;
+            padding: 4.8rem 3.2rem;
+
+            figcaption {
+                display: none;
+            }
+            
+        }
+    }
+    .medium-zoom-overlay,
+    .medium-zoom-image--opened {
+        z-index: 2;
+    }
+}
+
+
+.video-container {
+    position: relative;
+    padding-bottom: 56.25%; /*16:9*/
+    padding-top: 30px; 
+    height: 0; 
+    overflow: hidden;
+
+    box-shadow: 0px 4px 20px rgba(0,0,0,.1);
+    border-radius: 4px;
+  }
+   
+  .video-container iframe,
+  .video-container object,
+  .video-container embed {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }

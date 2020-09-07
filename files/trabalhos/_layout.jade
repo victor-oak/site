@@ -3,3 +3,18 @@ html(lang="pt-br")
   != partial("../_partials/head")
   body(class="page-trabalho")
     != yield
+
+    script(src="../medium-zoom.js")
+
+    script. 
+        document.addEventListener("DOMContentLoaded", function(event) {
+            mediumZoom('[data-zoomable]',{
+                background: 'rgba(0,0,0,.8)',
+                margin: 32})
+            
+            let el = document.querySelector(".leia-mais");
+            el.addEventListener("click", function(event) {
+                let container = document.querySelector(".content")
+                container.classList.add("open");
+            });
+        });

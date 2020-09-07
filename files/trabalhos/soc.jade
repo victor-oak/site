@@ -1,9 +1,10 @@
 .grid 
     .content
         section.intro
-            != partial("../_partials/logo-svg")
+            a.img-link(href="/")
+                != partial("../_partials/logo-svg")
             h1.title-page Renovando um sistema legado
-            p SMILES  /  2015 - 2017
+            p.client #[strong SOC] &nbsp;&nbsp;/&nbsp;&nbsp; #[span.year 2015 - 2017]
             ul.tags
                     li ARQUITETURA DE INFORMAÇÃO
                     li DESIGN DE INTERAÇÃO
@@ -12,32 +13,85 @@
                     li DESIGN OPS
                     li ESTRATÉGIA
                     li WORKSHOPS
-        section.mission
+        section.story
             h2.title-section MISSÃO
-            p texto
-        section.process
+            p O SOC foi um dos pioneiros em modelos SaaS no Brasil e é líder no ramo de saúde ocupacional. Porém nesses 20 anos na web, o legado não evoluiu os padrões de interface e interação, tendo vários gaps de usabilidade. Fui convocado para iniciar uma nova área de produto e design na empresa para modernizar o sistema.
+        
             h2.title-section PROCESSO
-            p texto
-        section.learn
+            p Inicialmente fiz um diagnóstico geral para traçar o plano de ação junto a área de desenvolvimento. Analisei o sistema, entrevistei diretores, gerentes, usuários e equipes internas. Criei processos de inclusão de design e pesquisa nos projetos de features, organizei fluxos de tarefas e mapeei os principais módulos do sistema. Então foi definido diretrizes e criado o projeto de Design System, onde junto a uma equipe de desenvolvimento especializada foi categorizado todos os componentes do sistemas, analisado os problemas e formado um inventário, onde foi totalmente redesenhado, desde UI à fluxos de interação. Uma documentação completa foi feita para auxiliar as outras equipes de desenvolvedores a construírem no novo padrão. Assim como foi realizado reuniões e workshops com todos os times da empresa: desenvolvimento, comercial, relacionamento, gestão de conhecimento, suporte e consultores para explicar as mudanças e evangelizar o uso.
+        
             h2.title-section APRENDIZADO
-            p texto
+            p Pude aprender muito na prática de como estruturar um Design System do zero e como mantê-lo e evolui-lo. Não é um trabalho fácil, ainda mais quando se tem muitos outros projetos em paralelo. Alinhamentos constantes entre design e desenvolvimento é vital, sendo que não existe design system se os dois lados da balança não estiverem equilibrados.
         ul.team
             li.team-name
                 h3 PARA
                 a(href="#") Age Technology
             li.people
-                a(href="#" title="Nome")
-                    img(src="" alt="Nome")
-                a(href="#" title="Nome")
-                    img(src="" alt="Nome")
-            li.people
-                a(href="#" title="Nome")
-                        img(src="" alt="Nome")
+                h3 UX/UI/PESQUISA
+                ul.people-list
+                    li
+                        a.img-link(href="#" title="Nome")
+                            img(src="/img/victor-carvalho@mob.jpg" alt="Nome")
+                            span.tooltip Victor Carvalho
+                    li
+                        a.img-link(href="#" title="Nome")
+                            img(src="/img/victor-carvalho@mob.jpg" alt="Nome")
+                            span.tooltip Victor Carvalho Alamenda junior
+            
+                
     .mosaic
-        img(src="../img/soc/edicao.png" alt="")
+        figure.big-item
+            img(src="../img/soc/edicao.png" data-zoomable)
+            figcaption Descritivo da tela com infos da imagem
+        
+        figure.vertical-item
+            img(src="../img/smiles/home-concept-mobile.png" alt="" data-zoomable)
+            figcaption Descritivo da tela com infos da imagem
+
+        figure.vertical-item
+            img(src="../img/smiles/home-concept-mobile.png" alt="" data-zoomable)
+            figcaption Descritivo da tela com infos da imagem
+        
+        figure.vertical-item
+            img(src="../img/smiles/home-concept-mobile.png" alt="" data-zoomable)
+            figcaption Descritivo da tela com infos da imagem
+        
+        figure.regular-item
+            img(src="../img/soc/edicao.png" alt="" data-zoomable)
+            figcaption Descritivo da tela com infos da imagem
+
+        figure.regular-item
+            img(src="../img/soc/edicao.png" alt="" data-zoomable)
+            figcaption Descritivo da tela com infos da imagem
+        
+        figure.regular-item
+            img(src="../img/soc/edicao.png" alt="" data-zoomable)
+            figcaption Descritivo da tela com infos da imagem
+
+        figure.vertical-item
+            img(src="../img/smiles/home-concept-mobile.png" alt="" data-zoomable)
+            figcaption Descritivo da tela com infos da imagem
+        
+        figure.vertical-item
+            img(src="../img/smiles/home-concept-mobile.png" alt="" data-zoomable)
+            figcaption Descritivo da tela com infos da imagem
+        
+        
+        iframe.big-item.video(width="560" height="315" src="https://www.youtube.com/embed/JvGSN1HU4e8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen)
+
 .next-work
     h4 PRÓXIMO TRABALHO
-    a Gamificação para um trabalho melhor
+    a(href="#") Gamificação para um trabalho melhor
     p ROBBYSON 
-a.back-to-top(href="#" style={display: block})
+a.back-to-top.img-link(href="#")
     != partial("../_partials/back-to-top")
+
+
+script(src="../medium-zoom.js")
+
+script. 
+    document.addEventListener("DOMContentLoaded", function(event) {
+        mediumZoom('[data-zoomable]',{
+            background: 'rgba(0,0,0,.8)',
+            margin: 32})
+    });

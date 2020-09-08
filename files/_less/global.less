@@ -26,12 +26,12 @@ a {
     font-size: inherit;
     color: #444;
     text-decoration: none;
-    box-shadow: 0px -12px 0px #FAFFBE inset;
+    box-shadow: 0px -1.2rem 0px #FAFFBE inset;
     transition: box-shadow .2s;
 }
   
 a:hover {
-    box-shadow: 0px -28px 0px #FAFFBE inset;
+    box-shadow: 0px -2.8rem 0px #FAFFBE inset;
     transition: box-shadow .2s;
 }
 
@@ -60,6 +60,8 @@ a:hover {
     border: 1px solid #C9C9C9;
     border-radius: 2.4rem;
 }
+
+
 
 .back-to-top {
     display: block;
@@ -94,11 +96,83 @@ a:hover {
 }
 
 
+.video-container {
+    position: relative;
+    padding-bottom: 56.25%; /*16:9*/
+    padding-top: 30px; 
+    height: 0; 
+    overflow: hidden;
 
-@media (max-width: 425px) {
-    html { font-size: 50%; } 
+    box-shadow: 0px 4px 20px rgba(0,0,0,.1);
+    border-radius: 4px;
+}
+   
+  .video-container iframe,
+  .video-container object,
+  .video-container embed {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
 }
 
+
+
+
+@media (max-width: 600px) {
+    .tags {
+        display: flex;
+        
+        padding-bottom: 1.6rem;
+        
+        flex-direction: row;
+        flex-wrap: nowrap;
+
+        overflow: scroll;
+        
+    }
+
+    //hack margin direita do último item da lista. 
+    .tags::after {
+        content: " ";
+        display: block;
+        width: 2.4rem;
+        padding-left: 1.0rem;
+
+    }
+
+    .wrap-tags {
+        position: relative;
+        padding-right: 2.4rem;
+    }
+
+    .wrap-tags::before {
+        content: " ";
+        display: block;
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 50px;
+        height: 100%;
+        background-image: linear-gradient(270deg, #fff 5%, rgba(255, 255, 255, 0.5) 80%, rgba(255, 255, 255, 0) 100%);
+    }
+
+
+
+    .leia-mais {
+        display: block;
+        position: absolute;
+        width: 100%;
+        margin: 0 auto;
+        text-align: center;
+        
+        bottom: 3.2rem;
+        left: 0;
+        
+        z-index: 1;
+    }
+}
 
 @media (min-width: 2560px) {
     html { font-size: 110%; } 

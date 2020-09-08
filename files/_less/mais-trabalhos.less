@@ -1,0 +1,158 @@
+.page-mais-trabalhos {
+
+    .intro {
+        padding: 6.4rem;
+        max-width: 56.0rem;
+
+        h1 { 
+            margin-top: 4.8rem;
+            font-size: 3.2rem;
+        }
+
+        p {
+            font-size: 2.4rem;
+            line-height: 3.6rem;
+        }
+    }
+
+    .grid {
+        display: grid;
+        
+        place-items: stretch;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: 10fr;
+
+        grid-auto-flow: row;
+    }
+
+    .grid-item {
+        width: 100%;
+        box-sizing: border-box;
+        border: 1px solid #EBEBEB;
+        border-left: 0;
+        border-bottom: 0;
+
+        :first-child {
+            border-top: 0;
+        }
+
+        :last-child {
+            border-bottom: 1px solid #EBEBEB;
+        }
+   
+    }
+
+    .content {
+        padding: 6.4rem;
+        border-left: 0;
+
+        h2 {
+            font-size: 2.4rem;
+
+            span { 
+                font-size: 1.6rem;
+                font-weight: normal;
+                color: #777;
+            }
+        }
+
+
+
+        p {
+            font-size: 1.8rem;
+            line-height: 3.2rem;
+        }
+
+    }
+
+    .logo-client {
+        display: flex;
+        place-items: center;
+
+        img {
+            display: block;
+            margin: 0 auto;
+            max-width: 100%;
+        }
+    }
+
+    @media screen and (max-width: 1156px) {
+
+        .content {
+            padding: 3.2rem; 
+        }
+
+    }
+
+    @media screen and (max-width:768px) {
+        .grid {
+            grid-template-columns: repeat(3, 1fr);
+        }
+
+        .grid-item {
+            
+            border-right: 0;
+        }
+
+        .grid-item:first-child {
+            border-top: 1px solid #EBEBEB;
+        }
+
+        .grid-item:last-child {
+            border-bottom: 0;
+        }
+
+        .content {
+            grid-column-end: span 2;
+        }
+
+        .intro,
+        .content {
+            padding: 3.2rem;
+            max-width: 100%;
+        }
+
+       
+    }
+
+    @media screen and (max-width:425px) {
+        .grid {
+            display: block;
+        }
+
+        .grid-item:nth-child(2n+2) {
+            border-top: 0;
+        }
+
+        .grid-item:first-child {
+            border-top: 0;
+        }
+
+        .logo-client {
+            place-self: start;
+            padding: 3.2rem 3.2rem 0 3.2rem;
+
+            img {
+                max-width: 20.0rem;
+                margin: 0;
+            }
+        }
+
+        .logo-client:nth-child(2n+2) {
+            padding: 0 3.2rem 3.2rem 3.2rem;
+        }
+
+        .content:nth-child(2n+1) {
+
+            padding-bottom: 0;
+        }
+
+        .content:nth-child(2n+2) {
+            padding-top: 0;
+        }
+    }
+
+
+
+}
+

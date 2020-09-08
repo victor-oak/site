@@ -1,4 +1,4 @@
-.page-trabalho {
+.page-portfolio {
 
     .grid {
         display: grid;
@@ -199,6 +199,7 @@
         position: absolute;
         top: 3.2rem;
         left: 50%;
+ 
 
         padding: 0.8rem 1.6rem;
         background-color: #444;
@@ -260,7 +261,7 @@
 }
 
 @media (max-width: 1260px) {
-    .page-trabalho {
+    .page-portfolio {
         .mosaic {
             
             grid-template-columns: repeat(2, 1fr);
@@ -285,7 +286,7 @@
 }
 
 @media (max-width: 980px) {
-    .page-trabalho {
+    .page-portfolio {
         .grid { 
             display: block;    
         }
@@ -315,68 +316,18 @@
 
 
 @media (max-width: 600px) {
-    .page-trabalho {
+    .page-portfolio {
         .content {
             position: relative;
             max-width: 100%;
-            padding: 3.2rem;
+            padding: 3.2rem 3.2rem 6.4rem 3.2rem;
 
             gap: 3.2rem;
 
             height: 50.0rem;
             overflow: hidden;
 
-            .tags {
-                display: flex;
-                
-                padding-bottom: 1.6rem;
-                
-                flex-direction: row;
-                flex-wrap: nowrap;
-
-                overflow: scroll;
-                
-            }
-
-            .wrap-tags {
-                position: relative;
-                padding-right: 2.4rem;
-            }
-
-            .wrap-tags::before {
-                content: " ";
-                display: block;
-                position: absolute;
-                top: 0;
-                right: 0;
-                width: 50px;
-                height: 100%;
-                background-image: linear-gradient(270deg, #fff 4.02%, rgba(255, 255, 255, 0.4) 51.94%, rgba(255, 255, 255, 0) 100%);
-            }
-
-            .wrap-tags::after {
-                content: " ";
-                display: block;
-                position: absolute;
-                top: 0;
-                left: -1.5rem;
-                width: 50px;
-                height: 100%;
-                background-image: linear-gradient(90deg, #fff 4.02%, rgba(255, 255, 255, 0.4) 51.94%, rgba(255, 255, 255, 0) 100%);
-            }
-
-            .leia-mais {
-                display: block;
-                position: absolute;
-                width: 100%;
-                margin: 0 auto;
-                text-align: center;
-                
-                bottom: 3.2rem;
-                left: 0;
-                
-                z-index: 1;
-            }
+            
         }
 
         .content::after {
@@ -422,23 +373,3 @@
 }
 
 
-.video-container {
-    position: relative;
-    padding-bottom: 56.25%; /*16:9*/
-    padding-top: 30px; 
-    height: 0; 
-    overflow: hidden;
-
-    box-shadow: 0px 4px 20px rgba(0,0,0,.1);
-    border-radius: 4px;
-  }
-   
-  .video-container iframe,
-  .video-container object,
-  .video-container embed {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-  }

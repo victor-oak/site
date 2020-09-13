@@ -4,9 +4,9 @@ html(lang="pt-br")
   body(class="page-portfolio")
     != yield
 
-    script(src="../medium-zoom.js")
+    script(src="../medium-zoom.js" defer)
 
-    script. 
+    script(defer). 
         document.addEventListener("DOMContentLoaded", function(event) {
             mediumZoom('[data-zoomable]',{
                 background: 'rgba(0,0,0,.8)',

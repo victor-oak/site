@@ -1,5 +1,5 @@
 .grid
-    .content
+    main.content
         h1.iam Olá! Eu sou #[br] #[span.name Victor Carvalho,] #[br]um #[span.highlight designer] buscando tornar coisas mais fáceis.
         section.works
             h2.title-section DESTAQUES
@@ -8,28 +8,32 @@
                     a(href="/trabalhos/soc") Renovando um sistema legado 
                     p SOC
                 li 
-                    a(href="#") Uma experiência de viagem redesenhada 
+                    a(href="/trabalhos/smiles") Uma experiência de viagem redesenhada 
                     p SMILES
                 li 
-                    a(href="#") Gamificação para um trabalho melhor 
+                    a(href="/trabalhos/robbyson") Gamificação para um trabalho melhor 
                     p ROBBYSON
                 li 
-                    a(href="#") Uma experiência mobile ’segura’ 
+                    a(href="/trabalhos/minuto") Uma experiência mobile ’segura’ 
                     p MINUTO SEGUROS
                 li: a.more(href="/trabalhos/mais-trabalhos") Mais trabalhos...
         section.projects
             h2.title-section PROJETOS & EXPERIMENTOS
             ul.list
                 li: a(href="/projetos/matrioska") Matrioska: uma proposta para design systems
-                li: a(href="#") Panorama UX e nosso mercado
-                li: a(href="#") Estudando game design com boardgames
+                li: a(href="/projetos/panorama-ux") Panorama UX e nosso mercado
+                li: a(href="/projetos/boardgames") Estudando game design com boardgames
         section.about
             h2.title-section SOBRE ESSE CARA
             p Comecei minha carreira há 10 anos atrás como web designer. Desde lá eu tive mais e mais interesse em estudar as camadas profundas de uma interface, e todo o processo para projetá-la.
             p Hoje trabalho em projetos de ponta a ponta para startups e grandes companhias, participando da estratégia à produção, mesclando habilidades em arquitetura de informação, design de interação, produto e desenvolvimento.
-            p Mais informações? Veja meu #[a(href="#") Curriculum Vitae].
-            p Você pode me achar no #[a(href="#") Linkedin], #[a(href="#") Twitter] e #[a(href="#") Medium] ou escrever para #[a(href="#") hello@victorcarvalho.com].
+            p Mais informações? Veja meu #[a(href="/cv-victor-carvalho.pdf" download="CV Victor Carvalho") Curriculum Vitae].
+            p Você pode me achar no #[a(href="https://www.linkedin.com/in/viccarvalho/" target="_blank") Linkedin], #[a(href="https://twitter.com/victorxcarvalho" target="_blank") Twitter] e #[a(href="https://medium.com/@victorxcarvalho") Medium] ou escrever para #[a.email(href="#" data-clipboard-text="hello@victorcarvalho.com") hello@victorcarvalho.com #[span.tooltip Clique para copiar] ].
             != partial("_partials/logo-svg")
-    .profile
+    sidebar.profile
+        canvas.js-paint
+
+
+
 
 

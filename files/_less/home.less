@@ -17,7 +17,7 @@
         display: flex;
         flex-direction: column;
         justify-content: flex-start;
-        gap: 6.4rem;
+        
     }
 
     .profile {
@@ -37,7 +37,9 @@
     }
 
     .iam {
-        padding: 3.2rem 3.2rem 0 3.2rem;
+        padding: 3.2rem;
+        margin: 0;
+
         font-weight: normal;
         font-size: 3.2rem;
         line-height: 5.6rem;
@@ -46,8 +48,8 @@
     .iam .name {
         font-style: normal;
         font-weight: bold;
-        font-size: 6.4rem;
-        line-height: 6.4rem;
+        font-size: 4.8rem;
+        line-height: 4.8rem;
     }
 
     .iam .highlight {
@@ -87,7 +89,7 @@
     .works,
     .projects,
     .about {
-        padding: 0 3.2rem;
+        padding: 3.2rem;
     }
 
     .about p {
@@ -99,6 +101,10 @@
 
     .about .logo {
         margin: 9.8rem 0 3.2rem 0;
+    }
+
+    .email {
+        word-break: break-word;
     }
 
     .email:hover .tooltip,
@@ -118,7 +124,14 @@
 }
 
 
-
+@media (min-width: 425px) {
+    .page-home {
+        .iam .name {
+            font-size: 6.4rem;
+            line-height: 6.4rem;
+        }
+    }
+}
 
 
 @media (min-width: 769px) {
@@ -157,7 +170,7 @@
         }
     
         .iam {
-            padding: 4.8rem 6.4rem 0 6.4rem;
+            padding: 6.4rem;
         }
     
         .iam .name {
@@ -168,11 +181,11 @@
         .works,
         .projects,
         .about {
-            padding: 0 6.4rem;
+            padding: 3.2rem 6.4rem;
         }
     
         .about .logo {
-            margin: 9.8rem 0 6.4rem 0;
+            margin: 6.4rem 0 3.2rem 0;
         }
 
         .js-paint {

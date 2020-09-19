@@ -2,6 +2,7 @@
   "globals": {
     "title": "Victor Carvalho - Product Designer",
     "name"  : "Victor Carvalho",
-    "uri": "http://victorcarvalho.com"
+    "uri": "http://victorcarvalho.com",
+    "coverpage": "http://victorcarvalho.com/img/victor-carvalho.jpg"
   }
 }

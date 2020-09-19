@@ -17,7 +17,6 @@
         display: flex;
         flex-direction: column;
         justify-content: flex-start;
-        gap: 6.4rem;
 
         padding: 6.4rem;
     }
@@ -25,6 +24,12 @@
     .logo {
         width: 6.4rem;
         height: 6.4rem;
+    }
+
+    .intro,
+    .story,
+    .team {
+        padding: 3.2rem 0;
     }
 
     .mosaic {
@@ -65,8 +70,8 @@
             
             font-size: 1.4rem;
             text-align: center;
-            background: rgb(0,0,0);
-            background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.7) 90%);
+            background: rgba(0,0,0,0.5);
+            background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.7) 100%);
             border-radius: 0 0 4px 4px;
             color: #fff;
             transition: opacity .2s;
@@ -152,10 +157,14 @@
         color: #D0D0D0;
     }
 
-    .story p {
+    .story {
         font-size: 1.8rem;
         line-height: 3.0rem;
-        margin-bottom: 4.8rem;
+        
+    }
+
+    .story p {
+        margin: 0 0 4.8rem 0;
     }
 
     .team,

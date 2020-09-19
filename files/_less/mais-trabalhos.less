@@ -23,19 +23,25 @@
     .grid {
         display: grid;
         
-        place-items: stretch;
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: 10fr;
-
         grid-auto-flow: row;
+
+  
+
     }
 
     .grid-item {
         width: 100%;
+        min-height: 48.0rem;
         box-sizing: border-box;
         border: 1px solid #EBEBEB;
         border-left: 0;
         border-bottom: 0;
+
+        display: flex;
+        flex-direction: column;
+        place-content: center;
 
         :first-child {
             border-top: 0;
@@ -72,6 +78,7 @@
 
     .logo-client {
         display: flex;
+        padding: 3.2rem;
         place-items: center;
 
         img {
@@ -95,7 +102,7 @@
         }
 
         .grid-item {
-            
+            min-height: auto;
             border-right: 0;
         }
 
@@ -125,6 +132,10 @@
             display: block;
         }
 
+        .grid-item {
+            place-content: flex-start;
+        }
+
         .grid-item:nth-child(2n+2) {
             border-top: 0;
         }
@@ -134,8 +145,8 @@
         }
 
         .logo-client {
-            place-self: start;
-            padding: 3.2rem 3.2rem 0 3.2rem;
+            place-items: start;
+            padding: 6.4rem 3.2rem 3.2rem 3.2rem;
 
             img {
                 max-width: 20.0rem;
@@ -144,12 +155,12 @@
         }
 
         .logo-client:nth-child(2n+2) {
-            padding: 0 3.2rem 3.2rem 3.2rem;
+            padding: 0 3.2rem 6.4rem 3.2rem;
         }
 
         .content:nth-child(2n+1) {
 
-            padding-bottom: 0;
+            padding-bottom: 6.4rem 0 0 0;
         }
 
         .content:nth-child(2n+2) {

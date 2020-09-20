@@ -4,6 +4,13 @@ html(lang="pt-br")
   body(class="page-home")
     != yield
 
+    <!--[if lte IE 9 ]>
+    <div style="display: block; margin: auto; position: absolute; top: 0;">
+    <img src="/img/shame.gif" />
+    <p>Este navegador está ultrapassado! Considere usar um <a href="https://browsehappy.com/?locale=pt">navegador moderno</a>.</p>
+    </div>
+    <![endif]-->
+
     script(src="https://cdn.jsdelivr.net/npm/clipboard@2.0.6/dist/clipboard.min.js" defer)
 
     script. 

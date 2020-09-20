@@ -3,6 +3,7 @@
     "title": "Victor Carvalho - Product Designer",
     "name"  : "Victor Carvalho",
     "uri": "https://victorcarvalho.netlify.app",
-    "coverpage": "https://victorcarvalho.netlify.app/img/victor-carvalho.jpg"
+    "pathpage": "",
+    "pathimg": "victor-carvalho.jpg"
   }
 }

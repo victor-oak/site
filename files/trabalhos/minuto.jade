@@ -1,0 +1,93 @@
+main.grid 
+    .content
+        section.intro
+            a.img-link(href="/")
+                != partial("../_partials/logo-svg")
+            h1.title-page Uma experiência mobile ’segura’
+            p.client #[strong MINUTO SEGUROS] &nbsp;&nbsp;/&nbsp;&nbsp; #[span.year 2018]
+            .wrap-tags
+                ul.tags
+                        li ARQUITETURA DE INFORMAÇÃO
+                        li DESIGN DE INTERAÇÃO
+                        li UI/VISUAL
+                        li PESQUISA
+
+        section.story
+            h2.title-section MISSÃO
+            p A Minuto é uma startup que oferece seguros online, mas o processo para captar os dados dos clientes estava deficiente e mal adaptado ao mobile. Nosso objetivo era melhorar o fluxo do formulário de orçamento e toda estrutura de informações de propostas.
+        
+            h2.title-section PROCESSO
+            p Após reuniões com times de produto e marketing, onde foi apresentado objetivos, análise de tráfego e funil, compreendemos algumas fricções no processo e formulamos hipóteses. Para descobrirmos o porquê, realizamos entrevistas e testes de usabilidade no site e em protótipos. Em paralelo fizemos um benchmark analisando o fluxo de outros players para buscar referências e insights. Com os insumos e análises, desenhamos um novo fluxo com interações focadas no mobile, aplicando uma nova camada visual mais enxuta e confortável. 
+        
+            h2.title-section APRENDIZADO
+            p Formulários gigantes são irritantes (óbvio). Os detalhes do mercado de seguro são nebulosos e, por isso, nem todo mundo gosta de contratar seguro online. Sentem-se mais 'seguros' falando com um corretor por telefone ou mesmo presencialmente. Nos resta apoiar o processo de contratação com o máximo de informações possíveis, de fácil acesso e compreensão. Algumas vezes até substituindo jargões de mercado ou complementando-os.
+        ul.team
+            li.team-name
+                h3 PARA
+                a(href="http://www.saiba-mais.com/" target="_blank") Saiba+ 
+            li.people
+                h3 UX LEAD
+                ul.people-list
+                    li
+                        a.img-link(href="https://www.linkedin.com/in/lulileslie/" target="_blank")
+                            img(src="/img/pessoas/carolina-leslie.jpg" alt="Carolina Leslie")
+                            span.tooltip Carolina Leslie
+            li.people
+                h3 UX/UI
+                ul.people-list
+                    li
+                        a.img-link(href="https://www.linkedin.com/in/viccarvalho/" target="_blank")
+                            img(src="/img/pessoas/victor-carvalho.jpg" alt="Victor Carvalho")
+                            span.tooltip Victor Carvalho
+            
+        .leia-mais  
+            a(href="#" aria-hidden="true") LEIA MAIS   
+                
+    .mosaic
+        figure.big-item
+            img(src="../img/minuto/minuto-paginas.png" alt="Imagem do fluxo analisado do formulário" data-zoomable)
+            figcaption Fluxo do formulário analisado.
+        
+        figure.big-item
+            img(src="../img/minuto/minuto-bench-bidu.png" alt="Imagem do fluxo da Bidu para benchmark" data-zoomable)
+            figcaption Benchmark do fluxo do concorrente.
+
+        figure.regular-item
+            img(src="../img/minuto/minuto-roteiro.png" alt="Imagem do roteiro das entrevistas" data-zoomable)
+            figcaption Roteiro desenvolvido para as entrevistas.
+        
+        video.vertical-item(src="../img/minuto/minuto-prototipo.mp4" controls title="Protótipo wireframe do fluxo de formulário")
+
+        
+        
+        figure.vertical-item
+            img(src="../img/minuto/minuto-home.png" alt="Imagem da página inicial" data-zoomable)
+            figcaption Página inicial.
+        
+        figure.regular-item
+            img(src="../img/minuto/minuto-novo-fluxo.png" alt="Imagem do fluxo redesenhado" data-zoomable)
+            figcaption Fluxo redesenhado.
+        
+        figure.vertical-item
+            img(src="../img/minuto/minuto-inicio.png" alt="Imagem do início do formulário" data-zoomable)
+            figcaption Inicio do formulário.
+        
+        figure.vertical-item
+            img(src="../img/minuto/minuto-formulario.png" alt="Imagem do formulário com questões sobre o carro" data-zoomable)
+            figcaption Etapa do formulário sobre o carro.
+        
+        figure.vertical-item
+            img(src="../img/minuto/minuto-orcamentos.png" alt="Imagem da página com orçamentos das seguradoras" data-zoomable)
+            figcaption Cotações e coberturas.
+
+        
+        
+
+footer.next-work
+    h4 MAIS TRABALHOS
+    a(href="/trabalhos/mais-trabalhos") Outros destaques
+
+a.back-to-top.img-link(href="#")
+    != partial("../_partials/back-to-top")
+
+

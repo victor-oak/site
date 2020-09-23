@@ -29,7 +29,7 @@
     .intro,
     .story,
     .team {
-        padding: 3.2rem 0;
+        padding: 2.4rem 0;
     }
 
     .mosaic {
@@ -59,7 +59,7 @@
 
         figcaption {
             position: absolute;
-            bottom: 0;
+            bottom: 0.5rem; //para arrumar padding bottom fantasma na tag figure (alguma inconsistencia no grid)
             left: 0;
             width: 100%;
 
@@ -81,19 +81,22 @@
             pointer-events: none;
         }
 
+        
         figure:hover figcaption {
             opacity: 1;
             transition: opacity .2s;
         }
 
         figure:hover,
-        video:hover {
+        video:hover,
+        .iframe-container:hover {
             transform: scale(1.1);
             transition: transform .3s;
         }
 
         img,
-        video {
+        video,
+        .iframe-container {
             max-width: 100%;
             border-radius: 4px;
             box-shadow: 0px 4px 20px rgba(0,0,0,.1);
@@ -102,7 +105,8 @@
         }
 
         img:hover,
-        video:hover {
+        video:hover,
+        .iframe-container:hover {
             box-shadow: 0px 4px 30px rgba(0,0,0,.2);
             transition: transform .3s, box-shadow .3s;
         }
@@ -126,25 +130,18 @@
             grid-row-end: span 3;
         }
 
-        .box-iframe {
-            max-width: 100%;
-            height: 50vh;
-            place-self: stretch;
-            
-        }
-
         
     }
 
     .title-page {
         font-size: 3.2rem;
-        margin: 4.8rem 0 2.4rem 0;
+        margin: 4.8rem 0 0 0;
     }
 
     .client {
         font-size: 1.8rem;
         color: #999999;
-        margin: 0 0 2.4rem 0;
+        margin: 2.4rem 0;
     }
 
     .year {
@@ -160,6 +157,13 @@
     .story {
         font-size: 1.8rem;
         line-height: 3.0rem;
+
+        ul {
+            padding: 0;
+            list-style: none;
+        }
+
+        li {padding: 0.8rem 0;}
         
     }
 
@@ -180,7 +184,6 @@
     }
 
     .team {
-        padding-top: 3.2rem;
         border-top: 1px solid #EBEBEB;
     }
 
@@ -287,7 +290,7 @@
         .content {
             position: relative;
             max-width: 100%;
-            padding: 3.2rem 3.2rem 6.4rem 3.2rem;
+            padding: 3.2rem;
 
             height: 70vh;
             overflow: hidden;
@@ -367,8 +370,7 @@
 
 @media (max-width: 425px) {
     .page-portfolio {
-        .intro, 
-        .story {padding-bottom: 0;}
+        .intro {padding-bottom: 0;}
 
         .team {
             flex-direction: column;

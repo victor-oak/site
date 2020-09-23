@@ -1,0 +1,42 @@
+main.grid 
+    .content
+        section.intro
+            a.img-link(href="/")
+                != partial("../_partials/logo-svg")
+            h1.title-page Panorama UX e nosso mercado
+            
+        section.story
+
+            p Uma das pesquisas mais completas e conceituadas do mercado de UX no Brasil. É sempre apresentada nos eventos da área e serve de caminho para muitos designers discutirem o futuro da profissão. Ajudo as organizadoras com comunicação visual, layouts para apresentação, site e desenvolvimento front-end. 
+
+            ul
+                li #[a(href="http://panoramaux.saiba-mais.com/" target="_blank") Site do projeto]
+                li #[a(href="https://brasil.uxdesign.cc/search?q=panorama%20ux" target="_blank") Artigos sobre a pesquisa]
+        
+        .leia-mais  
+            a(href="#" aria-hidden="true") LEIA MAIS   
+                
+    .mosaic
+        figure.big-item
+            img(src="../img/panorama-ux/panorama-site-intro.png" alt="Seção de introdução do site Panorama UX 2017" data-zoomable)
+            figcaption Introdução do site Panorama UX 2017.
+        
+        figure.big-item
+            img(src="../img/panorama-ux/panorama-site-highlights.png" alt="Seção Highlights com dados quantitativos das respostas de pesquisas paassadas" data-zoomable)
+            figcaption Seção Highlights do site Panorama UX 2017.
+        
+        figure.big-item
+            img(src="../img/panorama-ux/panorama-site-2019.png" alt="Slide da apresentação: Meta" data-zoomable)
+            figcaption Site Panorama UX 2019.
+        
+        .iframe-container.big-item#apresentacao    
+            iframe(src="//www.slideshare.net/slideshow/embed_code/key/M9BbDVz8Wl6Xoc" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" title="Apresentação Panorama UX 2020" allowfullscreen)
+        
+footer.next-work
+    h4 PRÓXIMO PROJETO
+    a(href="/projetos/boardgames") Estudando game design com boardgames
+
+a.back-to-top.img-link(href="#")
+    != partial("../_partials/back-to-top")
+
+

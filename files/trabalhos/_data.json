@@ -4,5 +4,23 @@
         "description": "O SOC foi um dos produtos pioneiros em modelo SaaS no Brasil e é líder no ramo de saúde ocupacional. Porém nesses 20 anos na web, o legado não evoluiu os padrões de interface e interação, tendo vários gaps de usabilidade. Fui convocado para iniciar uma nova área de produto e design na empresa para modernizar o sistema.",
         "pathpage": "trabalhos/soc",
         "pathimg": "soc/soc-lista.png"
-    } 
+    },
+    "smiles": {
+        "title": "Uma experiência de viagem redesenhada - Smiles | Victor Carvalho - Product Designer",
+        "description": "Melhorar fluxos de tarefas e design de informação de um dos maiores players de milhas do mercado.",
+        "pathpage": "trabalhos/smiles",
+        "pathimg": "smiles/smiles-home-concept.png"
+    },
+    "robbyson": {
+        "title": "Gamificação para um trabalho melhor - Robbyson/AeC | Victor Carvalho - Product Designer",
+        "description": "Robbyson é uma plataforma web para ajudar operadores de call center a entender seus resultados e estimular seu trabalho através da gamificação. Os executivos planejavam expandir para outros mercados, mas devido o tom lúdico e infantilizado, tinham medo do produto não ser bem recebido. Por isso fomos chamados para redesenhar o layout, mas no processo de pesquisa descobrimos muitas oportunidades de melhorias em navegação e funcionalidade que foram aplicadas no redesign.",
+        "pathpage": "trabalhos/robbyson",
+        "pathimg": "robbyson/robbyson-home.png"
+    },
+    "minuto": {
+        "title": "Uma experiência mobile ’segura’ - Minuto Seguros | Victor Carvalho - Product Designer",
+        "description": "A Minuto é uma startup que oferece seguros online, mas o processo para captar os dados dos clientes estava deficiente e mal adaptado ao mobile. Nosso objetivo era melhorar o fluxo do formulário de orçamento e toda estrutura de informações de propostas.",
+        "pathpage": "trabalhos/minuto",
+        "pathimg": "minuto/minuto-inicio.png"
+    }   
 }

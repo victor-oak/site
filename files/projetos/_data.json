@@ -1,6 +1,20 @@
 {
-    "soc": {
-        "title": "Renovando um sistema legado - SOC | Victor Carvalho - Product Designer",
-        "description": " "
+    "matrioska": {
+        "title": "Matrioska: uma proposta para design systems | Victor Carvalho - Product Designer",
+        "description": "Nos últimos anos comecei a estruturar um processo para me auxiliar na construção, documentação e entrega de interfaces. Por fim acabou se transformando em um framework para projetar e manter design systems.",
+        "pathpage": "projetos/matrioska",
+        "pathimg": "matrioska/matrioska-slide-source.png"
+    },
+    "panorama-ux": {
+        "title": "Panorama UX e nosso mercado | Victor Carvalho - Product Designer",
+        "description": "Uma das pesquisas mais completas e conceituadas do mercado de UX no Brasil.",
+        "pathpage": "projetos/panorama-ux",
+        "pathimg": "panorama-ux/panorama-site-intro.png"
+    },
+    "boardgames": {
+        "title": "Estudando game design com boardgames | Victor Carvalho - Product Designer",
+        "description": "Sou um grande entusiasta dos games, e tenho uma paixão específica por boardgames, principalmente na construção deles.",
+        "pathpage": "projetos/boardgames",
+        "pathimg": "boardgames/bg-foto.jpg"
     } 
 }

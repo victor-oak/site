@@ -2,7 +2,8 @@
   "globals": {
     "title": "Victor Carvalho - Product Designer",
     "name"  : "Victor Carvalho",
-    "uri": "https://victorcarvalho.netlify.app",
+    "description": "Product designer com 10 anos de experiência.",
+    "uri": "https://victorcarvalho.com",
     "pathpage": "",
     "pathimg": "victor-carvalho.jpg"
   }

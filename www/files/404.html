@@ -1,0 +1,68 @@
+<!DOCTYPE html><html lang="pt-br"><head><meta charset="utf-8"/><title></title><meta name="description" content="undefined"/><meta name="viewport" content="width=device-width, initial-scale=1"/><meta name="twitter:card" content="summary"/><meta name="twitter:site" content="@victorxcarvalho"/><meta name="twitter:creator" content="@victorxcarvalho"/><meta property="og:title" content="undefined"/><meta property="og:type" content="website"/><meta property="og:url" content="undefined/undefined"/><meta property="og:image" content="undefined/img/undefined"/><link rel="apple-touch-icon" href="/icon.png"/><link rel="icon" type="image/png" href="/icon.png"/><style>body {font-family: 'Comic Sans MS', 'Comic Sans', sans-serif;} 
+</style><link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&amp;display=swap" rel="stylesheet"/><link rel="stylesheet" href="/main.css"/></head><body class="page-home"><a href="/" class="img-link"></a><h1>404</h1><h3>Ops! Algo deu errado.</h3><a href="/">Voltar para página inicial</a><!--[if lte IE 9 ]>
+<div style="display: block; margin: auto; position: absolute; top: 0;">
+<img src="/img/shame.gif" />
+<p>Este navegador está ultrapassado! Considere usar um <a href="https://browsehappy.com/?locale=pt">navegador moderno</a>.</p>
+</div>
+<![endif]--><script src="https://cdn.jsdelivr.net/npm/clipboard@2.0.6/dist/clipboard.min.js" defer></script><script>document.addEventListener("DOMContentLoaded", function(event) {
+  let el = document.querySelector(".email");
+  el.addEventListener("click", function(event) {
+          event.preventDefault();
+      });
+  var clipboard = new ClipboardJS(el);
+
+  clipboard.on('success', function(e) {
+    tooltip = document.querySelector(".email .tooltip");
+    tooltip.textContent="Copiado!";
+    el.addEventListener("mouseleave", function( event ) {
+      tooltip.textContent="Clique para copiar";
+    })
+    
+  });
+
+  clipboard.on('error', function(e) {
+    console.log(e);
+  });
+
+  //drawing
+  const container = document.querySelector( '.profile' );
+  const paintCanvas = document.querySelector( '.js-paint' );
+
+  paintCanvas.width = container.clientWidth;
+  paintCanvas.height = container.clientHeight;
+
+  const context = paintCanvas.getContext( '2d' );
+  context.lineCap = 'round';
+  context.strokeStyle = "#FAFFBE"; 
+  context.lineWidth = 20;
+
+  
+
+  let x = 0, y = 0;
+  let isMouseDown = false;
+
+  const stopDrawing = () => { isMouseDown = false; }
+  const startDrawing = event => {
+      isMouseDown = true;   
+    [x, y] = [event.offsetX, event.offsetY];  
+  }
+  const drawLine = event => {
+      if ( isMouseDown ) {
+          const newX = event.offsetX;
+          const newY = event.offsetY;
+          context.beginPath();
+          context.moveTo( x, y );
+          context.lineTo( newX, newY );
+          context.stroke();
+          //[x, y] = [newX, newY];
+          x = newX;
+          y = newY;
+      }
+  }
+
+  paintCanvas.addEventListener( 'mousedown', startDrawing );
+  paintCanvas.addEventListener( 'mousemove', drawLine );
+  paintCanvas.addEventListener( 'mouseup', stopDrawing );
+  paintCanvas.addEventListener( 'mouseout', stopDrawing );
+
+});</script></body></html>

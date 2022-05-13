@@ -941,10 +941,10 @@ video {
   flex-direction: column;
   place-content: center;
 }
-.page-mais-trabalhos .grid-item :first-child {
+.page-mais-trabalhos .grid-item div:first-child {
   border-top: 0;
 }
-.page-mais-trabalhos .grid-item :last-child {
+.page-mais-trabalhos .grid-item div:last-child {
   border-bottom: 1px solid #EBEBEB;
 }
 .page-mais-trabalhos .content {
